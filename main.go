@@ -20,7 +20,8 @@ input := "1, fg, 3,   4, 4.5, do   , -2, -7 , ha-ha, 17"
 	operation := getOperation()
 	numbersSlice := getNumbersSlice()
 	finishNumber := getOperationWithSlice(operation, numbersSlice)
-	fmt.Println(finishNumber)
+	
+	fmt.Printf("Ваше искомое число: %v", finishNumber)
 }
 
 func getOperation() string {
@@ -58,7 +59,6 @@ func getNumbersSlice() []float64 {
 		}
 	}
 	slices.Sort(numbers)
-	fmt.Print(numbers)
 	return numbers
 }
 
